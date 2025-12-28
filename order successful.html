@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="head">BOOK ORDERING WEBSITE</h1>
+        <ul class="links">
+            <li class="inlink"><a href="index.html">Home</a></li>
+            <li class="ablink"><a href="about.html">About</a></li>
+            <li class="prlink"><a href="product.html">Product</a></li>
+            <li class="colink"><a href="contact.html">Contact</a></li>
+            <li class="orlink"><a href="order.html">Order</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side-navbar-links">
+              <li class="side-navbar-link"><a href="index.html">Home</a></li>
+              <li class="side-navbar-link"><a href="about.html">About</a></li>
+              <li class="side-navbar-link"><a href="product.html">Products</a></li>
+              <li class="side-navbar-link"><a href="contact.html">Contact</a></li>
+              <li class="side-navbar-link"><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="car">
+    <div class="success-box">
+        <h2>Order Successful ✅</h2>
+        <div id="details"></div>
+    </div>
+    <script>
+    const data = JSON.parse(localStorage.getItem("orderDetails"));
+    document.getElementById("details").innerHTML = `
+    <p><b>Name:</b> ${data.name}</p>
+    <p><b>Books:</b> ${data.selectedBooks.join(", ")}</p>
+    <p><b>Total:</b> ₹${data.total}</p>
+    <p><b>Payment:</b> ${data.payment}</p>
+    <p><b>Date:</b> ${data.date}</p>
+    `;
+    </script>
+    </div>
+    
+
+
+    <br>
+
+    <script src="successful.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+    confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

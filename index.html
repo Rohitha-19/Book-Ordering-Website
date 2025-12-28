@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ordering Website</title>
+    <link rel="icon" href="imgs/book icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="head">BOOK ORDERING WEBSITE</h1>
+        <ul class="links">
+            <li class="inlink"><a href="index.html">Home</a></li>
+            <li class="ablink"><a href="about.html">About</a></li>
+            <li class="prlink"><a href="product.html">Product</a></li>
+            <li class="colink"><a href="contact.html">Contact</a></li>
+            <li class="orlink"><a href="order.html">Order</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side-navbar-links">
+              <li class="side-navbar-link"><a href="index.html">Home</a></li>
+              <li class="side-navbar-link"><a href="about.html">About</a></li>
+              <li class="side-navbar-link"><a href="product.html">Products</a></li>
+              <li class="side-navbar-link"><a href="contact.html">Contact</a></li>
+              <li class="side-navbar-link"><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+    <img class="pic" src="imgs/book.png">
+    </div>
+    <div class="color">
+    <h2 class="about">About Us</h2>
+    <div class="abt">
+        <div>
+            <p>Welcome!! We are an online website where you can find and order books easily. Our goal is to help everyone enjoy reading by making books simple to find and buy.</p><br><p>Whether you are a student, a reader, or just someone looking for a good book, we are here for you. We offer many types of books at good prices and deliver them quickly to your door.</p><br><p>At this website, we believe reading is fun and important. Thank you for visiting our website. We hope you enjoy your time here!</p>
+            <br><br>
+            <a href="product.html">
+            <button class="btn">Shop Now!</button>
+            </a>
+        </div>
+        <div>
+            <img class="abt-img" src="imgs/abt.jpeg" alt="abt book" style="width: 400px; height: 380px;">
+        </div>
+    </div>
+    </div>
+    <div class="bgcolor">
+    <h2 class="product">Our Products</h2>
+    <div class="products" id="products">
+            <div class="products-box">
+                <img src="imgs/frog.jpg" alt="frog" style="width: 200px; height: 250px;">
+                <p>Name: Eat that Frog</p>
+                <p>Author: Brain Tracy</p>
+                <h3>Price: ₹180/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/ikigai.jpg" alt="ikigai" style="width: 200px; height: 250px;">
+                <p>Name: Ikigai</p>
+                <p>Author: Hector Garcia & Francesc Miralles</p>
+                <h3>Price: ₹120/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/club.jpg" alt="tha 5am club" style="width: 200px; height: 250px;">
+                <p>Name: The 5AM Club</p>
+                <p>Author: Robin Sharma</p>
+                <h3>Price: ₹200/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/monk.jpg" alt="monk" style="width: 200px; height: 250px;">
+                <p>Name: Think like a Monk</p>
+                <p>Author: Jay Shetty</p>
+                <h3>Price: ₹100/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/dad.jpg" alt="dad" style="width: 200px; height: 250px;">
+                <p>Name: Rich Dad Poor Dad</p>
+                <p>Author: Robert Toru Kiyosaki</p>
+                <h3>Price: ₹170/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/ferrari.jpg" alt="ferrari" style="width: 200px; height: 250px;">
+                <p>Name: The Monk Who Sold His Ferrari</p>
+                <p>Author: Robin Sharma</p>
+                <h3>Price: ₹160/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/magic.jpg" alt="magic" style="width: 200px; height: 250px;">
+                <p>Name: The Magic Mindset</p>
+                <p>Author: Preeti Shenoy</p>
+                <h3>Price: ₹200/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/secret.jpg" alt="secret" style="width: 200px; height: 250px;">
+                <p>Name: Secret</p>
+                <p>Author: Rhonda Byrne</p>
+                <h3>Price: ₹180/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/sherlock.jpg" alt="sherlock" style="width: 200px; height: 250px;">
+                <p>Name: Sherlock Holmes:Golden Years</p>
+                <p>Author: Kim H.Krisko</p>
+                <h3>Price: ₹300/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/think.jpg" alt="think" style="width: 200px; height: 250px;">
+                <p>Name: Think and Grow Rich</p>
+                <p>Author: Napoleon Hill</p>
+                <h3>Price: ₹170/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/power.jpg" alt="power" style="width: 200px; height: 250px;">
+                <p>Name: Power of Your Subconscious Mind</p>
+                <p>Author: Joseph Murphy</p>
+                <h3>Price: ₹190/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/big.jpg" alt="big" style="width: 200px; height: 250px;">
+                <p>Name: The Magic of Thinking Big</p>
+                <p>Author: David J.Schwartz</p>
+                <h3>Price: ₹160/-</h3>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <div class="bcolor">
+       <h2 class="order">Order</h2>
+       <div class="container">
+       <h2 class="plc">Place your Order!</h2>
+        <form class="form">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input style="text" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td>Phone no:</td>
+                    <td><input type="number" placeholder="Enter Your Phone no"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Enter Your Email"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input style="text" placeholder="Enter Your Address"></td>
+                </tr>
+                <tr>
+                    <td>Select Book:</td>
+                    <td>
+                        <div class="books">
+                            <label><input type="checkbox" value="Eat that Frog">Eat that Frog - Rs:180</label><br>
+                            <label><input type="checkbox" value="Ikigai">Ikigai - Rs:120</label><br>
+                            <label><input type="checkbox" value="The 5AM Club">The 5AM Club - Rs:200</label><br>
+                            <label><input type="checkbox" value="Think Like a Monk">Think Like a Monk - Rs:100</label><br>
+                            <label><input type="checkbox" value="Rich Dad Poor Dad">Rich Dad Poor Dad - Rs:170</label><br>
+                            <label><input type="checkbox" value="The Monk Who Sold His Ferrari">The Monk Who Sold His Ferrari - Rs:200</label><br>
+                            <label><input type="checkbox" value="The Magic Mindset">The Magic Mindset - Rs:200</label><br>
+                            <label><input type="checkbox" value="Secret">Secret - Rs:180</label><br>
+                            <label><input type="checkbox" value="Sherlock Holmes">Sherlock Holmes - Rs:300</label><br>
+                            <label><input type="checkbox" value="Think and Grow Rich">Think and Grow Rich - Rs:170</label><br>
+                            <label><input type="checkbox" value="The Power of Your Subconscious Mind">The Power of Your Subconscious Mind - Rs:190</label><br>
+                            <label><input type="checkbox" value="The Magic of Thinking Big">The Magic of Thinking Big - Rs:160</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payment:</td>
+                    <td>
+                        <select id="payment" required>
+                            <option value="">Payment Method</option>
+                            <option value="Cash On Delivery">Cash On Delivery</option>
+                            <option value="UPI">UPI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <div id="orderDetails" class="order-box;"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="gcolor">
+        <div class="end">
+            <h2 class="us">Contact Us</h2>
+            <form class="door">
+                <label for="name">Name:</label>
+                <input class="tab" type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input class="tab" type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <input class="tab" type="message" id="message" name="message" rows="6" required>
+                <button class="pbox" type="submit">Submit</button>
+            </form>
+        </div>
+    
+    <hr>
+    <h2 class="contact">For Contact</h2>
+    <div class="con">
+        <h2 class="web">Book Ordering Website </h2>
+        <p class="touch">Get in Touch!! Happy Shopping</p>
+        <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+        <p><i class="fa-solid fa-envelope"></i> bookorder@gmail.com</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> India - 123456</p>
+        <div class="syl">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+    </div>
+    <script src="successful.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="head">BOOK ORDERING WEBSITE</h1>
+        <ul class="links">
+            <li class="inlink"><a href="index.html">Home</a></li>
+            <li class="ablink"><a href="about.html">About</a></li>
+            <li class="prlink"><a href="product.html">Product</a></li>
+            <li class="colink"><a href="contact.html">Contact</a></li>
+            <li class="orlink"><a href="order.html">Order</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side-navbar-links">
+              <li class="side-navbar-link"><a href="index.html">Home</a></li>
+              <li class="side-navbar-link"><a href="about.html">About</a></li>
+              <li class="side-navbar-link"><a href="product.html">Products</a></li>
+              <li class="side-navbar-link"><a href="contact.html">Contact</a></li>
+              <li class="side-navbar-link"><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+<!--For Search bar-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+     <!-- Products -->
+        <div class="products" id="products">
+            <div class="products-box">
+                <img src="imgs/frog.jpg" alt="frog" style="width: 200px; height: 250px;">
+                <p>Name: Eat that Frog</p>
+                <p>Author: Brain Tracy</p>
+                <h3>Price: ₹180/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/ikigai.jpg" alt="ikigai" style="width: 200px; height: 250px;">
+                <p>Name: Ikigai</p>
+                <p>Author: Hector Garcia & Francesc Miralles</p>
+                <h3>Price: ₹120/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/club.jpg" alt="tha 5am club" style="width: 200px; height: 250px;">
+                <p>Name: The 5AM Club</p>
+                <p>Author: Robin Sharma</p>
+                <h3>Price: ₹200/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/monk.jpg" alt="monk" style="width: 200px; height: 250px;">
+                <p>Name: Think like a Monk</p>
+                <p>Author: Jay Shetty</p>
+                <h3>Price: ₹100/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/dad.jpg" alt="dad" style="width: 200px; height: 250px;">
+                <p>Name: Rich Dad Poor Dad</p>
+                <p>Author: Robert Toru Kiyosaki</p>
+                <h3>Price: ₹170/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/ferrari.jpg" alt="ferrari" style="width: 200px; height: 250px;">
+                <p>Name: The Monk Who Sold His Ferrari</p>
+                <p>Author: Robin Sharma</p>
+                <h3>Price: ₹160/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/magic.jpg" alt="magic" style="width: 200px; height: 250px;">
+                <p>Name: The Magic Mindset</p>
+                <p>Author: Preeti Shenoy</p>
+                <h3>Price: ₹200/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/secret.jpg" alt="secret" style="width: 200px; height: 250px;">
+                <p>Name: Secret</p>
+                <p>Author: Rhonda Byrne</p>
+                <h3>Price: ₹180/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/sherlock.jpg" alt="sherlock" style="width: 200px; height: 250px;">
+                <p>Name: Sherlock Holmes:Golden Years</p>
+                <p>Author: Kim H.Krisko</p>
+                <h3>Price: ₹300/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/think.jpg" alt="think" style="width: 200px; height: 250px;">
+                <p>Name: Think and Grow Rich</p>
+                <p>Author: Napoleon Hill</p>
+                <h3>Price: ₹170/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/power.jpg" alt="power" style="width: 200px; height: 250px;">
+                <p>Name: Power of Your Subconscious Mind</p>
+                <p>Author: Joseph Murphy</p>
+                <h3>Price: ₹190/-</h3>
+            </div>
+            <div class="products-box">
+                <img src="imgs/big.jpg" alt="big" style="width: 200px; height: 250px;">
+                <p>Name: The Magic of Thinking Big</p>
+                <p>Author: David J.Schwartz</p>
+                <h3>Price: ₹160/-</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="gcolor">
+    <h2 class="contact">For Contact</h2>
+    <div class="con">
+        <h2 class="web">Book Ordering Website </h2>
+        <p class="touch">Get in Touch!! Happy Shopping</p>
+        <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+        <p><i class="fa-solid fa-envelope"></i> bookorder@gmail.com</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> India - 123456</p>
+        <div class="syl">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+    </div>
+    <script src="product.js"></script>
+</body>
+</html>

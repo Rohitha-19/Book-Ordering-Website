@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="head">BOOK ORDERING WEBSITE</h1>
+        <ul class="links">
+            <li class="inlink"><a href="index.html">Home</a></li>
+            <li class="ablink"><a href="about.html">About</a></li>
+            <li class="prlink"><a href="product.html">Product</a></li>
+            <li class="colink"><a href="contact.html">Contact</a></li>
+            <li class="orlink"><a href="order.html">Order</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side-navbar-links">
+              <li class="side-navbar-link"><a href="index.html">Home</a></li>
+              <li class="side-navbar-link"><a href="about.html">About</a></li>
+              <li class="side-navbar-link"><a href="product.html">Products</a></li>
+              <li class="side-navbar-link"><a href="contact.html">Contact</a></li>
+              <li class="side-navbar-link"><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bcolor">
+       <h2 class="order">Order</h2>
+       <div class="container">
+       <h2 class="plc">Place your Order!</h2>
+        <form class="form">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input style="text" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td>Phone no:</td>
+                    <td><input type="number" placeholder="Enter Your Phone no"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Enter Your Email"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input style="text" placeholder="Enter Your Address"></td>
+                </tr>
+                <tr>
+                    <td>Select Book:</td>
+                    <td>
+                        <div class="books">
+                            <label><input type="checkbox" value="Eat that Frog">Eat that Frog - Rs:180</label><br>
+                            <label><input type="checkbox" value="Ikigai">Ikigai - Rs:120</label><br>
+                            <label><input type="checkbox" value="The 5AM Club">The 5AM Club - Rs:200</label><br>
+                            <label><input type="checkbox" value="Think Like a Monk">Think Like a Monk - Rs:100</label><br>
+                            <label><input type="checkbox" value="Rich Dad Poor Dad">Rich Dad Poor Dad - Rs:170</label><br>
+                            <label><input type="checkbox" value="The Monk Who Sold His Ferrari">The Monk Who Sold His Ferrari - Rs:200</label><br>
+                            <label><input type="checkbox" value="The Magic Mindset">The Magic Mindset - Rs:200</label><br>
+                            <label><input type="checkbox" value="Secret">Secret - Rs:180</label><br>
+                            <label><input type="checkbox" value="Sherlock Holmes">Sherlock Holmes - Rs:300</label><br>
+                            <label><input type="checkbox" value="Think and Grow Rich">Think and Grow Rich - Rs:170</label><br>
+                            <label><input type="checkbox" value="The Power of Your Subconscious Mind">The Power of Your Subconscious Mind - Rs:190</label><br>
+                            <label><input type="checkbox" value="The Magic of Thinking Big">The Magic of Thinking Big - Rs:160</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Payment:</td>
+                    <td>
+                        <select id="payment" required>
+                            <option value="">Payment Method</option>
+                            <option value="Cash On Delivery">Cash On Delivery</option>
+                            <option value="UPI">UPI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <div id="orderDetails" class="order-box;"></div>
+        </div>
+    </div>
+    <script src="successful.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
